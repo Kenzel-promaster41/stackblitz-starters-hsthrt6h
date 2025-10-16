@@ -3,8 +3,45 @@
   <head>
     <title>GameZone Home</title>
     <meta name="description" content="A website about computer games." />
+    <link rel="stylesheet" href="../styles.css">
+    <style>
+      /* Simple styling for the navigation bar */
+      nav {
+        background-color: #333;
+        padding: 10px;
+      }
+      nav ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+      }
+      nav li {
+        float: left;
+        margin-right: 15px;
+      }
+      nav a {
+        color: white;
+        text-decoration: none;
+        font-weight: bold;
+        padding: 8px 12px;
+        display: block;
+      }
+      nav a:hover {
+        background-color: #555;
+      }
+    </style>
   </head>
   <body>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="page2.html">Game Tips</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+
     <h1>GameZone</h1>
     <h2>Welcome to the world of computer games</h2>
     <p>Find popular game types and fun games to play.</p>
@@ -19,6 +56,5 @@
     </ul>
 
     <p><a href="page2.html">Go to Game Tips</a></p>
-    <link rel="stylesheet" href="../styles.css">
   </body>
 </html>

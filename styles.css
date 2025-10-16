@@ -1,3 +1,4 @@
+/* Reset margins and paddings */
 body, h1, h2, h3, p, ul {
   margin: 0;
   padding: 0;
@@ -10,7 +11,6 @@ body {
   padding: 20px;
   line-height: 1.6;
 }
-
 
 nav {
   background-color: #2980b9; 
@@ -28,11 +28,16 @@ nav a {
   font-weight: bold;
 }
 
+/* Part 1: Nav hover */
+nav a:hover {
+  background-color: #e67e22;
+  color: white;
+}
+
 nav a[aria-current='page'] {
   background-color: #e67e22;         
   color: white;
 }
-
 
 h1 {
   color: #2980b9; 
@@ -71,4 +76,26 @@ a {
 
 a:hover {
   text-decoration: underline;
+}
+
+/* Part 2: Flexbox grid */
+.flex-grid {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.flex-item {
+  background-color: #16a085;
+  padding: 15px;
+  margin: 10px;
+  border: 2px solid #2980b9;
+  border-radius: 4px;
+  color: white;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  text-align: center;
+  width: 150px;
 }
