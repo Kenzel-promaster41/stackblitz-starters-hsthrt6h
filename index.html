@@ -1,139 +1,149 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>GameZone Home</title>
-    <meta name="description" content="A website about computer games." />
-    <link rel="stylesheet" href="../styles.css">
-    <style>
-      body, h1, h2, h3, p, ul {
-        margin: 0;
-        padding: 0;
-      }
 
-      body {
-        font-family: Arial, sans-serif;
-        background-color: #a2f6fc;
-        color: #333;
-        padding: 20px;
-        line-height: 1.6;
-      }
+<head>
+  <title>GameZone Home</title>
+  <meta name="description" content="A website about computer games." />
+  <link rel="stylesheet" href="../styles.css" />
+  <style>
+    body,
+    h1,
+    h2,
+    h3,
+    p,
+    ul {
+      margin: 0;
+      padding: 0;
+    }
 
-      nav {
-        background-color: #333;
-        padding: 10px;
-        display: flex;
-        justify-content: center;
-        gap: 20px;
-      }
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #a2f6fc;
+      color: #333;
+      padding: 20px;
+      line-height: 1.6;
+    }
 
-      nav a {
-        color: white;
-        text-decoration: none;
-        font-weight: bold;
-      }
+    nav {
+      background-color: #333;
+      padding: 10px;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+    }
 
-      nav a:hover {
-        text-decoration: underline;
-      }
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
 
-      h1 {
-        text-align: center;
-        margin-top: 20px;
-      }
+    nav a:hover {
+      text-decoration: underline;
+    }
 
-      h2, h3 {
-        text-align: center;
-      }
+    h1 {
+      text-align: center;
+      margin-top: 20px;
+    }
 
-      .flex-container {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 20px;
-        margin: 30px auto;
-        max-width: 1000px;
-      }
+    h2,
+    h3 {
+      text-align: center;
+    }
 
-      .flex-item {
-        background-color: #fff;
-        border: 2px solid #333;
-        border-radius: 10px;
-        padding: 40px 20px;
-        text-align: center;
-        flex: 1 1 40%; /* ensures two per row on most screens */
-        font-size: 1.2em;
-        box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
-        transition: transform 0.2s ease;
-      }
+    .flex-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      margin: 30px auto;
+      max-width: 1000px;
+    }
 
-      .flex-item:hover {
-        transform: scale(1.05);
-      }
+    .flex-item {
+      background-color: #fff;
+      border: 2px solid #333;
+      border-radius: 10px;
+      padding: 40px 20px;
+      text-align: center;
+      flex: 1 1 40%;
 
-      a {
-        color: #0077cc;
-      }
+      font-size: 1.2em;
+      box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
+      transition: transform 0.2s ease;
+    }
 
-      a:hover {
-        text-decoration: underline;
-      }
-    </style>
-  </head>
-  
-  <body>
-    <nav>
-      <a href="index.html" aria-current="page">Home</a>
-      <a href="page2.html">Game Tips</a>
-      <a href="about.html">About</a>
-      <a href="contact.html">Contact</a>
-    </nav>
+    .flex-item:hover {
+      transform: scale(1.05);
+    }
 
-    <h1>GameZone</h1>
-    <h2>Welcome to the world of computer games</h2>
-    <p style="text-align:center;">Find popular game types and fun games to play.</p>
+    a {
+      color: #0077cc;
+    }
 
-    <h3>Popular Games</h3>
-    <div class="flex-container">
-      <div class="flex-item">Action Games</div>
-      <div class="flex-item">Role-Playing Games</div>
-      <div class="flex-item">Strategy Games</div>
-      <div class="flex-item">Puzzle Games</div>
-      <div class="flex-item">Driving Games</div>
-      <div class="flex-item">Sports Games</div>
-      <div class="flex-item">Math Games</div>
-      <div class="flex-item">Typing Games</div>
-      <div class="flex-item">Simulation Games</div>
-      <div class="flex-item">Platform Games</div>
+    a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+
+<body>
+  <nav>
+    <a href="index.html" aria-current="page">Home</a>
+    <a href="page2.html">Game Tips</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
+  <h1>GameZone</h1>
+  <h2>Welcome to the world of computer games</h2>
+  <p style="text-align: center">
+    Find popular game types and fun games to play.
+  </p>
+
+  <h3>Popular Games</h3>
+  <div class="flex-container">
+    <div class="flex-item">Action Games</div>
+    <div class="flex-item">Role-Playing Games</div>
+    <div class="flex-item">Strategy Games</div>
+    <div class="flex-item">Puzzle Games</div>
+    <div class="flex-item">Driving Games</div>
+    <div class="flex-item">Sports Games</div>
+    <div class="flex-item">Math Games</div>
+    <div class="flex-item">Typing Games</div>
+    <div class="flex-item">Simulation Games</div>
+    <div class="flex-item">Platform Games</div>
+  </div>
+  <h3>Most Played Games</h3>
+  <div class="game-grid">
+    <div class="game-card">
+      <img src="images/slope.png" alt="Slope Game" />
+      <p>Slope</p>
     </div>
-    <h3>Most Played Games</h3>
-<div class="game-grid">
-  <div class="game-card">
-    <img src="images/slope.png" alt="Slope Game">
-    <p>Slope</p>
+
+    <div class="game-card">
+      <img src="images/basketballlegends.png" alt="Basketball Legends" />
+      <p>Basketball Legends</p>
+    </div>
+
+    <div class="game-card">
+      <img src="images/fnaf.png" alt="Five Nights at Freddy's" />
+      <p>Five Nights at Freddy's</p>
+    </div>
+
+    <div class="game-card">
+      <img src="images/madalinstuntcars.png" alt="Madalin Stunt Cars 2" />
+      <p>Madalin Stunt Cars 2</p>
+    </div>
+
+    <div class="game-card">
+      <img src="images/nitrotype.png" alt="Nitro Type" />
+      <p>Nitro Type</p>
+    </div>
   </div>
 
-  <div class="game-card">
-    <img src="images/basketballlegends.png" alt="Basketball Legends">
-    <p>Basketball Legends</p>
-  </div>
+  <p style="text-align: center"><a href="page2.html">Go to Game Tips</a></p>
+</body>
 
-  <div class="game-card">
-    <img src="images/fnaf.png" alt="Five Nights at Freddy's">
-    <p>Five Nights at Freddy's</p>
-  </div>
-
-  <div class="game-card">
-    <img src="images/madalinstuntcars.png" alt="Madalin Stunt Cars 2">
-    <p>Madalin Stunt Cars 2</p>
-  </div>
-
-  <div class="game-card">
-    <img src="images/nitrotype.png" alt="Nitro Type">
-    <p>Nitro Type</p>
-  </div>
-</div>
-
-
-    <p style="text-align:center;"><a href="page2.html">Go to Game Tips</a></p>
-  </body>
 </html>
