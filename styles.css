@@ -16,7 +16,7 @@ body {
   line-height: 1.6;
 }
 
-/* Navigation */
+
 nav {
   background-color: #2980b9;
   padding: 10px;
@@ -44,7 +44,7 @@ nav a:hover {
   transform: scale(1.05);
 }
 
-/* Headings & Text */
+
 h1 {
   color: #2980b9;
   font-size: 36px;
@@ -88,7 +88,7 @@ a:hover {
   text-decoration: underline;
 }
 
-/* Flex Layout */
+
 .flex-container {
   display: flex;
   flex-wrap: wrap;
@@ -119,7 +119,7 @@ a:hover {
   transform: scale(1.07);
 }
 
-/* Grid Layout */
+
 .game-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
@@ -161,7 +161,7 @@ a:hover {
   margin-top: 5px;
 }
 
-/* Tips Section */
+
 .tips-container {
   display: flex;
   flex-wrap: wrap;
@@ -187,7 +187,7 @@ a:hover {
   transform: scale(1.05);
 }
 
-/* Footer */
+
 .footer {
   display: flex;
   padding: 1rem;
@@ -210,7 +210,7 @@ a:hover {
   text-decoration: underline;
 }
 
-/* Images */
+
 .image-container {
   display: flex;
   flex-wrap: wrap;
@@ -233,7 +233,7 @@ a:hover {
   display: block;
 }
 
-/* Media Query */
+
 @media (max-width: 400px) {
   .image-container {
     flex-direction: column;

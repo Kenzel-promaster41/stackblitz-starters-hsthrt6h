@@ -1,36 +1,19 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
+  <meta charset="UTF-8">
   <title>Contact GameZone</title>
-  <meta name="description" content="Contact GameZone" />
-  <link rel="stylesheet" href="../styles.css" />
+  <meta name="description" content="Contact GameZone to share feedback or favorite games." />
 
-  <script>
-    function submitForm() {
 
-      var userName = document.getElementById("username").value;
-      var gameType = document.getElementById("gameType").value;
-      var subscribed = document.getElementById("subscribe").checked;
+  <link rel="icon" href="images/favicon.ico">
 
-      var subscribeText;
-      if (subscribed) {
-        subscribeText = "Yes";
-      } else {
-        subscribeText = "No";
-      }
 
- 
-      alert(
-        "Name: " + userName +
-        "\nFavorite Game Type: " + gameType +
-        "\nSubscribed to Updates: " + subscribeText
-      );
-    }
-  </script>
+  <link rel="stylesheet" href="../styles.css">
 </head>
 
 <body>
+
   <nav>
     <a href="index.html">Home</a>
     <a href="page2.html">Game Tips</a>
@@ -39,21 +22,22 @@
   </nav>
 
   <h1>Contact GameZone</h1>
-  <p>Fill out the form below to get in touch.</p>
-
-  <form style="display: flex; flex-direction: column; gap: 15px; width: 300px;">
+  <p>Fill out the form below to get in touch with us.</p>
 
 
+  <form
+    style="display: flex; flex-direction: column; gap: 15px; width: 300px; margin: 0 auto;"
+  >
     <label for="username">Your Name:</label>
     <input type="text" id="username">
 
-
     <label for="gameType">Favorite Game Type:</label>
     <select id="gameType">
-      <option>Action</option>
-      <option>Strategy</option>
+      <option value="Action">Action</option>
+      <option value="Strategy">Strategy</option>
+      <option value="Sports">Sports</option>
+      <option value="Puzzle">Puzzle</option>
     </select>
-
 
     <label>
       <input type="checkbox" id="subscribe">
@@ -61,8 +45,16 @@
     </label>
 
     <button type="button" onclick="submitForm()">Submit</button>
-
   </form>
 
+  <footer class="footer">
+    <p>
+      Contact:
+      <a href="mailto:gamezone@gmail.com">gamezone@gmail.com</a>
+    </p>
+  </footer>
+
+
+  <script src="script.js"></script>
 </body>
 </html>

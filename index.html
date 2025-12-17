@@ -1,12 +1,27 @@
 <!DOCTYPE html>
 <html>
-
 <head>
   <title>GameZone Home</title>
-  <meta name="description" content="A website about computer games." />
+  <meta name="description" content="GameZone is a site for discovering games and gaming tips." />
+  <link rel="icon" href="images/favicon.ico">
   <link rel="stylesheet" href="../styles.css" />
-  <link rel="icon" href="/images/favicon.ico">
-
+  <style>
+  
+    .game-images {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+      margin: 30px 0;
+    }
+    .game-images img {
+      width: 200px; 
+      height: auto;
+      border: 2px solid #000;
+      border-radius: 10px;
+    }
+  </style>
+</head>
 
 <body>
   <nav>
@@ -17,64 +32,36 @@
   </nav>
 
   <h1>GameZone</h1>
-  <h2>Welcome to the world of computer games</h2>
-  <p style="text-align: center">
-    Find popular game types and fun games to play.
+  <h2>Your place for games and tips</h2>
+
+  <p>
+    GameZone is a website where you can explore popular games,
+    learn tips, and connect with other gamers.
   </p>
 
-  <h3>Popular Games</h3>
   <div class="flex-container">
     <div class="flex-item">Action Games</div>
-    <div class="flex-item">Role-Playing Games</div>
     <div class="flex-item">Strategy Games</div>
     <div class="flex-item">Puzzle Games</div>
-    <div class="flex-item">Driving Games</div>
     <div class="flex-item">Sports Games</div>
-    <div class="flex-item">Math Games</div>
-    <div class="flex-item">Typing Games</div>
-    <div class="flex-item">Simulation Games</div>
-    <div class="flex-item">Platform Games</div>
   </div>
 
-  <h3>Most Played Games</h3>
-  <div class="game-grid">
-    <div class="game-card">
-      <img src="images/slope.png" alt="Slope Game" />
-      <p>Slope</p>
-    </div>
 
-    <div class="game-card">
-      <img src="images/basketballlegends.png" alt="Basketball Legends" />
-      <p>Basketball Legends</p>
-    </div>
-
-    <div class="game-card">
-      <img src="images/fnaf.png" alt="Five Nights at Freddy's" />
-      <p>Five Nights at Freddy's</p>
-    </div>
-
-    <div class="game-card">
-      <img src="images/madalinstuntcars.png" alt="Madalin Stunt Cars 2" />
-      <p>Madalin Stunt Cars 2</p>
-    </div>
-
-    <div class="game-card">
-      <img src="images/nitrotype.png" alt="Nitro Type" />
-      <p>Nitro Type</p>
-    </div>
+  <div class="game-images">
+    <img src="images/basketballlegends.png" alt="Basketball Legends">
+    <img src="images/fnaf.png" alt="FNAF">
+    <img src="images/madalinstuntcars.png" alt="Madalin Stunt Cars">
+    <img src="images/nitrotype.png" alt="Nitro Type">
+    <img src="images/slope.png" alt="Slope">
   </div>
-
-  <p style="text-align: center">
-    <a href="page2.html">Go to Game Tips</a>
-  </p>
+  
+  </div>
 
   <footer class="footer">
     <p>
-      Contact Us:
-      <a>gamezone@gmail.com</a>
-      <a>(781-132-6456)</a>
+      Contact:
+      <a href="mailto:gamezone@gmail.com">gamezone@gmail.com</a>
     </p>
   </footer>
 </body>
-
 </html>
