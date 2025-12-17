@@ -1,78 +1,68 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <title>Contact GameZone</title>
-  <link rel="stylesheet" href="styles.css">
-
-  <style>
- 
-    form {
-      display: flex;
-      flex-direction: column;
-      gap: 15px;
-      max-width: 400px;
-      padding: 20px;
-      background-color: #e6c222;
-      border-radius: 10px;
-      margin-top: 30px;
-    }
-
-    label {
-      font-weight: bold;
-    }
-
-    input, select {
-      padding: 8px;
-      font-size: 16px;
-    }
-
-    button {
-      padding: 10px;
-      font-size: 16px;
-      background-color: #2980b9;
-      color: white;
-      border: none;
-      border-radius: 5px;
-      cursor: pointer;
-    }
-
-    button:hover {
-      background-color: #16a085;
-    }
-  </style>
+  <meta name="description" content="Contact GameZone" />
+  <link rel="stylesheet" href="../styles.css" />
 
   <script>
     function submitForm() {
-      alert("Form submitted successfully!");
+
+      var userName = document.getElementById("username").value;
+      var gameType = document.getElementById("gameType").value;
+      var subscribed = document.getElementById("subscribe").checked;
+
+      var subscribeText;
+      if (subscribed) {
+        subscribeText = "Yes";
+      } else {
+        subscribeText = "No";
+      }
+
+ 
+      alert(
+        "Name: " + userName +
+        "\nFavorite Game Type: " + gameType +
+        "\nSubscribed to Updates: " + subscribeText
+      );
     }
   </script>
 </head>
 
 <body>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="page2.html">Game Tips</a>
+    <a href="about.html">About</a>
+    <a href="contact.html" aria-current="page">Contact</a>
+  </nav>
+
   <h1>Contact GameZone</h1>
+  <p>Fill out the form below to get in touch.</p>
 
-  <form onsubmit="submitForm(); return false;">
-    
-
-    <label for="name">Your Name:</label>
-    <input type="text" id="name" name="name" required>
+  <form style="display: flex; flex-direction: column; gap: 15px; width: 300px;">
 
 
-    <label for="favorite">Favorite Game Type:</label>
-    <select id="favorite" name="favorite">
-      <option value="action">Action</option>
-      <option value="strategy">Strategy</option>
+    <label for="username">Your Name:</label>
+    <input type="text" id="username">
+
+
+    <label for="gameType">Favorite Game Type:</label>
+    <select id="gameType">
+      <option>Action</option>
+      <option>Strategy</option>
     </select>
 
- 
+
     <label>
-      <input type="checkbox" name="subscribe">
+      <input type="checkbox" id="subscribe">
       Subscribe to updates
     </label>
 
-
-    <button type="submit">Submit</button>
+    <button type="button" onclick="submitForm()">Submit</button>
 
   </form>
+
 </body>
 </html>
